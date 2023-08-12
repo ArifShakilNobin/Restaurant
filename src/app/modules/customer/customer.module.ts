@@ -10,5 +10,6 @@ import { CustomerRoutes } from './customer.routing';
 @NgModule({
   declarations: [MenuCreateComponent, MenuListComponent, MenuComponent],
   imports: [SharedModule, NgZorroAntdModule, CustomerRoutes],
+  exports:[MenuComponent]
 })
 export class CustomerModule {}

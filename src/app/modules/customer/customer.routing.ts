@@ -5,7 +5,7 @@ import { MenuCreateComponent } from './components/menu/menu-create/menu-create.c
 
 const routes: Routes = [
   {
-    path: 'menu',
+    path: '',
     component: MenuComponent,
     // children: [
     //   {
@@ -25,5 +25,8 @@ const routes: Routes = [
     // ],
   },
 ];
+
+
+
 
 export const CustomerRoutes = RouterModule.forChild(routes);
