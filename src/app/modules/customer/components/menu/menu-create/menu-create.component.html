@@ -1,1 +1,18 @@
-<p>menu-create works!</p>
+<div class="row">
+  <div class="col-md-4">
+    <nz-form-label nzRequired>Upload Document</nz-form-label>
+    <nz-form-item>
+      <nz-form-control>
+        <input
+          #myInput
+          type="file"
+          nz-input
+          multiple
+          (change)="uploadFiles($event)"
+        />
+      </nz-form-control>
+    </nz-form-item>
+    <span style="color: red"><sup>**</sup>Note: </span> &nbsp;<span>
+      Maximum 5 documents can be uploaded</span>
+  </div>
+</div>
